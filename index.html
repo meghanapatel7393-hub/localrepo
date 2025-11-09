@@ -29,23 +29,76 @@
 
     <p><strong>way 2 to merge branches</strong></p>
     <p>create a PR - Pull Request</p>
-    <p>Pull request - it lets you tell others about changes you've pushed to branch in a repository on GitHub</p>
+    <p>
+      Pull request - it lets you tell others about changes you've pushed to
+      branch in a repository on GitHub
+    </p>
     <p>create a PR - to merge the branch</p>
+
+    <p>
+      after merge the brnach code we need to pull all latest udate from github
+      to local main branch.
+    </p>
+    <p>
+      for that use Pull COmmand that helps us to pull all latest udate from
+      github to local main branch
+    </p>
+    <p>
+      git pull origin main - this command get all latest udate from github to
+      local main branch
+    </p>
+    <p>
+      used to fetch and download content from a remote repository and immediatly
+      update the local repo to match that content
+    </p>
+
+    <p><strong>Resolving Merge Conflicts - bhvesh</strong></p>
+
+    <p>
+      an event that take place when git is unable to automaticaly resolve
+      differences in code between two branches/commits
+    </p>
+
+    <p>git merge --abort - to abort the merge</p>
+    <p>git merge --continue - to continue the merge</p>
+    <p>git merge --skip - to skip the merge</p>
+
+    <p>
+      <strong
+        >Undoing Changes - this is used when we want to undo changes.</strong
+      >
+    </p>
+    <p>
+      case 1: staged changes <br />
+      git reset fileName - used this command when reset one in file <br />
+      git reset - used this command when reset all last added changes <br />-
+      stated changes means only add but not commit
+    </p>
+    <p>
+      case 2: commited changes (for one commit) <br />
+      git reset HEAD~1 -> hear HEAD~1 means ((last commit is HEAD~1)) undo last
+      commit - used only for single commit
+    </p>
+    <p>
+      case 3: commited changes (for multiple commits) <br />
+      git reset &lt;commit hash&gt; <br />
+      - here hash means commit id or commit hash. if we want back from commit 3
+      to commit 1 then we need to use commit hash of commit 1 hash <br />
+      that hash we can check or get using git log command. <br /><br />
+      git reset --hard &lt;commit hash&gt; - using this command we can undo
+      multiple commits at once. and that remove all the commit history from vs
+      code and git also --hard is used with reset.
+    </p>
+
+    <p>
+      git log - used this command to see all commit history with commit id/hash
+    </p>
+
+    <p><strong>Fork</strong> - a copy of a repository</p>
+    <p>A fork is a new repository that shares code and visibility setting with the original "upstream" repository</p>
+    <p>Fork is a rough copy</p>
+    <p>git fork - to create a fork</p>
+    <p> using fork command we can create a copy of other repository to our repository also</p>
     
-<p>after merge the brnach code we need to pull all latest udate from github to local main branch.</p>
-<p>for that use Pull COmmand that helps us to pull all latest udate from github to local main branch</p>
-<p>git pull origin main - this command get all latest udate from github to local main branch</p>
-<p>used to fetch and download content from a remote repository and immediatly update the local repo to match that content</p>
-
-
-<p><strong>Resolving Merge Conflicts - bhvesh</strong></p>
-
-<p>an event that take place when git is unable to automaticaly resolve differences in code between two branches/commits </p>
-
-<p>git merge --abort - to abort the merge</p>
-<p>git merge --continue - to continue the merge</p>
-<p>git merge --skip - to skip the merge</p>
-
-
   </body>
 </html>
